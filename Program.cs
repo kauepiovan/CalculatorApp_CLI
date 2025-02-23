@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Calculator;
 
@@ -25,6 +26,38 @@ class Program
         Console.WriteLine("----------------------------------------------");
         Console.WriteLine("Digite o número da opção: ");
         Console.ReadLine();
+
+        short operationNumber = short.Parse(Console.ReadLine());
+
+        switch (operationNumber)
+        {
+            case 1:
+            {
+                Sum();
+                break;
+            }
+            case 2:
+            {
+                Sub();
+                break;
+            }
+            case 3:
+            {
+                Div();
+                break;
+            }
+            case 4:
+            {
+                Mult();
+                break;
+            }
+            default:
+            {
+                Menu();
+                break;
+            }
+        }
+ 
     }
 
     static void Sum() 
