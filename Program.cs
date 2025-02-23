@@ -6,10 +6,24 @@ class Program
 {
     static void Main(string[] args)
     {
-        Sum();
-        Sub();
-        Div();
-        Mult();
+        Menu();
+    }
+
+    static void Menu() 
+    {
+        Console.WriteLine("+--------------------------------------+");
+        Console.WriteLine("|              CALCULADORA             |");
+        Console.WriteLine("+--------------------------------------+");
+        Console.WriteLine("");
+        Console.WriteLine("Escolha a operacao que deseja abaixo");
+        Console.WriteLine("1 - Soma");
+        Console.WriteLine("2 - Subtracao");
+        Console.WriteLine("3 - Multiplicacao");
+        Console.WriteLine("4 - Divisao");
+        Console.WriteLine("");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("Digite o numero da opcao: ");
+        Console.ReadLine();
     }
 
     static void Sum() 
