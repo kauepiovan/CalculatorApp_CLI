@@ -6,7 +6,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        Sum();
+        Sub();
+        Div();
+        Mult();
     }
 
     static void Sum() 
@@ -23,7 +26,7 @@ class Program
         Console.WriteLine($"O resultado de {num1} + {num2} = {result}");
     }
 
-    static void sub()
+    static void Sub()
     {
         Console.Clear();
 
@@ -37,7 +40,7 @@ class Program
         Console.WriteLine($"O resultado de {num1} - {num2} = {result}");
     }
 
-    static void div()
+    static void Div()
     {
         Console.Clear();
 
@@ -51,7 +54,7 @@ class Program
         Console.WriteLine($"O resultado de {num1} / {num2} = {result}");
     }
 
-    static void mult()
+    static void Mult()
     {
         Console.Clear();
 
