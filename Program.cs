@@ -124,17 +124,14 @@ class Program
         Console.Clear();
 
         Console.WriteLine("Digite o primeiro numero: ");
-        string userInput1 = Console.ReadLine();
+        double num1 = double.Parse(Console.ReadLine());
+
         Console.WriteLine("Digite o segundo numero: ");
-        string userInput2 = Console.ReadLine();
+        double num2 = double.Parse(Console.ReadLine());
 
-        double value1 = double.Parse(userInput1);
-        double value2 = double.Parse(userinput2);
-
-
-        double result = num1 * num2;
+        double result = num1 / num2;
         Console.WriteLine($"O resultado de {num1} * {num2} = {result}");
-        
+
         Console.ReadKey();
         Menu();
     }
