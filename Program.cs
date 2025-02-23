@@ -11,18 +11,19 @@ class Program
 
     static void Menu() 
     {
-        Console.WriteLine("+--------------------------------------+");
-        Console.WriteLine("|              CALCULADORA             |");
-        Console.WriteLine("+--------------------------------------+");
+        Console.WriteLine("+--------------------------------------------+");
+        Console.WriteLine("|                 CALCULADORA                |");
+        Console.WriteLine("+--------------------------------------------+");
         Console.WriteLine("");
-        Console.WriteLine("Escolha a operacao que deseja abaixo");
+        Console.WriteLine("Escolha a operação que deseja abaixo.");
+        Console.WriteLine("");
         Console.WriteLine("1 - Soma");
-        Console.WriteLine("2 - Subtracao");
-        Console.WriteLine("3 - Multiplicacao");
-        Console.WriteLine("4 - Divisao");
+        Console.WriteLine("2 - Subtracão");
+        Console.WriteLine("3 - Multiplicacão");
+        Console.WriteLine("4 - Divisão");
         Console.WriteLine("");
-        Console.WriteLine("----------------------------------------");
-        Console.WriteLine("Digite o numero da opcao: ");
+        Console.WriteLine("----------------------------------------------");
+        Console.WriteLine("Digite o número da opção: ");
         Console.ReadLine();
     }
 
@@ -38,6 +39,9 @@ class Program
 
         double result = num1 + num2;
         Console.WriteLine($"O resultado de {num1} + {num2} = {result}");
+
+        Console.ReadKey();
+        Menu();
     }
 
     static void Sub()
@@ -52,6 +56,9 @@ class Program
 
         double result = num1 - num2;
         Console.WriteLine($"O resultado de {num1} - {num2} = {result}");
+
+        Console.ReadKey();
+        Menu();
     }
 
     static void Div()
@@ -66,6 +73,9 @@ class Program
 
         double result = num1 / num2;
         Console.WriteLine($"O resultado de {num1} / {num2} = {result}");
+
+        Console.ReadKey();
+        Menu();
     }
 
     static void Mult()
@@ -80,5 +90,8 @@ class Program
 
         double result = num1 * num2;
         Console.WriteLine($"O resultado de {num1} * {num2} = {result}");
+        
+        Console.ReadKey();
+        Menu();
     }
 }
