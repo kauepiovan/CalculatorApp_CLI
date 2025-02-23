@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 
 namespace Calculator;
 
@@ -22,6 +21,10 @@ class Program
         Console.WriteLine("2 - Subtracão");
         Console.WriteLine("3 - Multiplicacão");
         Console.WriteLine("4 - Divisão");
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("0 - SAIR DO PROGRAMA");
         Console.WriteLine("");
         Console.WriteLine("----------------------------------------------");
         Console.WriteLine("Digite o número da opção: ");
@@ -49,6 +52,11 @@ class Program
             case 4:
             {
                 Mult();
+                break;
+            }
+            case 0:
+            {
+                System.Environment.Exit(0);
                 break;
             }
             default:
@@ -116,10 +124,13 @@ class Program
         Console.Clear();
 
         Console.WriteLine("Digite o primeiro numero: ");
-        double num1 = double.Parse(Console.ReadLine());
-
+        string userInput1 = Console.ReadLine();
         Console.WriteLine("Digite o segundo numero: ");
-        double num2 = double.Parse(Console.ReadLine());
+        string userInput2 = Console.ReadLine();
+
+        double value1 = double.Parse(userInput1);
+        double value2 = double.Parse(userinput2);
+
 
         double result = num1 * num2;
         Console.WriteLine($"O resultado de {num1} * {num2} = {result}");
